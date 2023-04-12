@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  resources :home, only: %i[index new] do
+    collection do
+      get :check_win_condition     
+    end
+  end
   root 'home#index'
 end

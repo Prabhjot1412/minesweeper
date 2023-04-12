@@ -1,1 +1,29 @@
 @import "bootstrap";
+@import "font-awesome";
+
+.boxes {
+  width: 50px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.boxes:hover {
+  background-color: aquamarine;
+}
+
+.clicked {
+  background-color: rgb(55, 255, 188);
+}
+
+.disabled {
+  pointer-events: none;
+  color: grey;
+}
+
+.fa-bomb {
+  color: red !important;
+}
+
+.won {
+  color: green;
+  pointer-events: none;
+}
